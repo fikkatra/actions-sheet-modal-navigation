@@ -24,12 +24,12 @@ function HomeScreen({ navigation }) {
   return (
     <>
       <View style={styles.container}>
-        <Button title="Open ActionSheet" onPress={openActionSheet} />
-        <Button title="Navigate to Modal" onPress={navigateToModal} />
+        <Button title="Open Action Sheet" onPress={openActionSheet} />
+        <Button title="Navigate to Modal screen" onPress={navigateToModal} />
       </View>
       <ActionSheet id={sheetId} ref={actionSheetRef} isModal={true}>
         <View style={styles.sheet}>
-          <Button title="Navigate to Modal" onPress={navigateToModal} />
+          <Button title="Navigate to Modal screen" onPress={navigateToModal} />
         </View>
       </ActionSheet>
     </>
